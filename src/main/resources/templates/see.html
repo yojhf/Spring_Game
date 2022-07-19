@@ -1,0 +1,24 @@
+{{>layout/header}}
+<!-- 목록 출력 영역 -->
+<table class="table table-horizontal table-bordered">
+    <thead class="thead-strong">
+    <tr>
+        <th>이름</th>
+        <th>장르</th>
+        <th>이미지</th>
+        <th>홈페이지</th>
+    </tr>
+    </thead>
+    <tbody id="tbody">
+    <!-- #은 반복문 -->
+    {{#list}}
+    <tr>
+        <td>{{name}}</td>
+        <td>{{jang}}</td>
+        <td><img src = "{{img}}"></td>
+        <td><a href = "{{page}}" target="_blank">홈페이지로 가기</a></td>
+    </tr>
+    {{/list}}
+    </tbody>
+</table>
+{{>layout/footer}}

@@ -1,0 +1,25 @@
+{{>layout/header}}
+<div class="container">
+    <h3>게임을 추천 해주세요!</h3>
+    <form>
+        <div class="form-group">
+            <label for="name">게임이름 : </label>
+            <input type="text" class="form-control" id="name" placeholder="게임 이름 입력" name="name">
+        </div>
+        <div class="form-group">
+            <label for="jang">게임장르 : </label>
+            <input type="text" class="form-control" id="jang" placeholder="게임 장르 입력" name="jang">
+        </div>
+        <div class="form-group">
+            <label for="page">게임사이트 : </label>
+            <input type="text" class="form-control" id="page" placeholder="홈페이지 입력" name="page">
+        </div>
+        <div class="form-group">
+            <label for="img">이미지 주소 :  </label>
+            <input type="text" class="form-control" id="img" placeholder="이미지주소 입력" name="img">
+        </div>
+        <a href="/" role="button" class="btn btn-secondary">취소</a>
+        <button type="button" class="btn btn-primary" id="btn-save">등록하기</button>
+    </form>
+</div>
+{{>layout/footer}}
